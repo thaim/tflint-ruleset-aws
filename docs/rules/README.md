@@ -426,7 +426,6 @@ These rules enforce best practices and naming conventions:
 |aws_config_organization_conformance_pack_invalid_template_body|✔|
 |aws_config_organization_conformance_pack_invalid_template_s3_uri|✔|
 |aws_config_organization_custom_rule_invalid_description|✔|
-|aws_config_organization_custom_rule_invalid_input_parameters|✔|
 |aws_config_organization_custom_rule_invalid_lambda_function_arn|✔|
 |aws_config_organization_custom_rule_invalid_maximum_execution_frequency|✔|
 |aws_config_organization_custom_rule_invalid_name|✔|
@@ -434,7 +433,6 @@ These rules enforce best practices and naming conventions:
 |aws_config_organization_custom_rule_invalid_tag_key_scope|✔|
 |aws_config_organization_custom_rule_invalid_tag_value_scope|✔|
 |aws_config_organization_managed_rule_invalid_description|✔|
-|aws_config_organization_managed_rule_invalid_input_parameters|✔|
 |aws_config_organization_managed_rule_invalid_maximum_execution_frequency|✔|
 |aws_config_organization_managed_rule_invalid_name|✔|
 |aws_config_organization_managed_rule_invalid_resource_id_scope|✔|
@@ -623,6 +621,7 @@ These rules enforce best practices and naming conventions:
 |aws_elasticsearch_domain_policy_invalid_domain_name|✔|
 |aws_elasticsearch_domain_saml_options_invalid_domain_name|✔|
 |aws_emr_cluster_invalid_scale_down_behavior|✔|
+|aws_emr_instance_group_invalid_cluster_id|✔|
 |aws_emr_studio_invalid_auth_mode|✔|
 |aws_emr_studio_session_mapping_invalid_identity_type|✔|
 |aws_flow_log_invalid_log_destination_type|✔|
