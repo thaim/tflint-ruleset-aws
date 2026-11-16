@@ -3,6 +3,13 @@
 package ephemeral
 
 var writeOnlyArguments = map[string][]writeOnlyArgument{
+	"aws_acm_certificate": {
+		{
+			originalAttribute:         "private_key",
+			writeOnlyAlternative:      "private_key_wo",
+			writeOnlyVersionAttribute: "private_key_wo_version",
+		},
+	},
 	"aws_bedrockagentcore_api_key_credential_provider": {
 		{
 			originalAttribute:         "api_key",
@@ -24,6 +31,33 @@ var writeOnlyArguments = map[string][]writeOnlyArgument{
 			writeOnlyVersionAttribute: "master_password_wo_version",
 		},
 	},
+	"aws_dx_macsec_key_association": {
+		{
+			originalAttribute:         "cak",
+			writeOnlyAlternative:      "cak_wo",
+			writeOnlyVersionAttribute: "cak_wo_version",
+		},
+	},
+		{
+			originalAttribute:         "ckn",
+			writeOnlyAlternative:      "ckn_wo",
+			writeOnlyVersionAttribute: "ckn_wo_version",
+		},
+	},
+	"aws_elasticache_replication_group": {
+		{
+			originalAttribute:         "auth_token",
+			writeOnlyAlternative:      "auth_token_wo",
+			writeOnlyVersionAttribute: "auth_token_wo_version",
+		},
+	},
+	"aws_elasticache_user": {
+		{
+			originalAttribute:         "passwords",
+			writeOnlyAlternative:      "passwords_wo",
+			writeOnlyVersionAttribute: "passwords_wo_version",
+		},
+	},
 	"aws_kms_ciphertext": {
 		{
 			originalAttribute:         "plaintext",
@@ -31,11 +65,25 @@ var writeOnlyArguments = map[string][]writeOnlyArgument{
 			writeOnlyVersionAttribute: "plaintext_wo_version",
 		},
 	},
+	"aws_odb_autonomous_database": {
+		{
+			originalAttribute:         "admin_password",
+			writeOnlyAlternative:      "admin_password_wo",
+			writeOnlyVersionAttribute: "admin_password_wo_version",
+		},
+	},
 	"aws_rds_cluster": {
 		{
 			originalAttribute:         "master_password",
 			writeOnlyAlternative:      "master_password_wo",
 			writeOnlyVersionAttribute: "master_password_wo_version",
+		},
+	},
+	"aws_rds_tenant_database": {
+		{
+			originalAttribute:         "master_user_password",
+			writeOnlyAlternative:      "master_user_password_wo",
+			writeOnlyVersionAttribute: "master_user_password_wo_version",
 		},
 	},
 	"aws_redshift_cluster": {
